@@ -1,8 +1,6 @@
 type Condition = boolean | (() => boolean) | undefined;
 
-export function combineClasses(
-  ...args: (string | Record<string, Condition>)[]
-): string {
+export function combineClasses(...args: (string | Record<string, Condition>)[]): string {
   return args
     .flatMap((arg) => {
       if (arg === undefined) {
