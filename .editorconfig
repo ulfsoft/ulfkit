@@ -1,0 +1,17 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+max_line_length = 120
+
+[*.{mjs,js,ts,jsx,tsx,astro,css}]
+indent_size = 2
+insert_final_newline = true
+
+[*.{json}]
+indent_style = space
+indent_size = 2

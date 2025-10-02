@@ -1,0 +1,68 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+    "vcs": {
+        "enabled": false,
+        "clientKind": "git",
+        "useIgnoreFile": false
+    },
+    "files": {
+        "ignoreUnknown": false
+    },
+    "formatter": {
+        "bracketSameLine": true,
+        "lineWidth": 120,
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 2,
+        "lineEnding": "lf",
+        "attributePosition": "auto"
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "lineWidth": 120,
+            "quoteStyle": "double",
+            "attributePosition": "auto",
+            "bracketSameLine": true
+        }
+    },
+    "assist": {
+        "enabled": true,
+        "actions": {
+            "source": {
+                "organizeImports": "on",
+                "recommended": true
+            }
+        }
+    },
+    "overrides": [
+        {
+            "includes": [
+                "**/*.svelte",
+                "**/*.astro",
+                "**/*.vue"
+            ],
+            "formatter": {
+                "lineWidth": 120,
+                "bracketSameLine": true
+            },
+            "linter": {
+                "rules": {
+                    "style": {
+                        "useConst": "off",
+                        "useImportType": "off"
+                    },
+                    "correctness": {
+                        "noUnusedVariables": "off",
+                        "noUnusedImports": "off"
+                    }
+                }
+            }
+        }
+    ]
+}
