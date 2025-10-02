@@ -1,75 +1,86 @@
 {
-    "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
-    "vcs": {
-        "enabled": false,
-        "clientKind": "git",
-        "useIgnoreFile": false
-    },
-    "files": {
-        "ignoreUnknown": false
+  "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/*.generated.js"
+    ]
+  },
+  "formatter": {
+    "useEditorconfig": true,
+    "bracketSameLine": true,
+    "lineWidth": 120,
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "attributePosition": "auto"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "useImportType": "warn"
+      }
+    }
+  },
+  "json": {
+    "formatter": {
+      "lineWidth": 120,
+      "expand": "always"
+    }
+  },
+  "javascript": {
+    "assist": {
+      "enabled": true
     },
     "formatter": {
-        "useEditorconfig": true,
-        "bracketSameLine": true,
+      "lineWidth": 120,
+      "quoteStyle": "double",
+      "attributePosition": "auto",
+      "bracketSameLine": true,
+      "expand": "auto"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "recommended": true
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/*.svelte",
+        "**/*.astro",
+        "**/*.vue"
+      ],
+      "formatter": {
         "lineWidth": 120,
-        "enabled": true,
-        "indentStyle": "space",
-        "indentWidth": 2,
-        "lineEnding": "lf",
-        "attributePosition": "auto"
-    },
-    "linter": {
-        "enabled": true,
+        "bracketSameLine": true
+      },
+      "linter": {
         "rules": {
-            "recommended": true,
-            "style": {
-                "useImportType": "warn"
-            }
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
         }
-    },
-    "javascript": {
-        "assist": {
-            "enabled": true
-        },
-        "formatter": {
-            "lineWidth": 120,
-            "quoteStyle": "double",
-            "attributePosition": "auto",
-            "bracketSameLine": true
-        }
-    },
-    "assist": {
-        "enabled": true,
-        "actions": {
-            "source": {
-                "organizeImports": "on",
-                "recommended": true
-            }
-        }
-    },
-    "overrides": [
-        {
-            "includes": [
-                "**/*.svelte",
-                "**/*.astro",
-                "**/*.vue"
-            ],
-            "formatter": {
-                "lineWidth": 120,
-                "bracketSameLine": true
-            },
-            "linter": {
-                "rules": {
-                    "style": {
-                        "useConst": "off",
-                        "useImportType": "off"
-                    },
-                    "correctness": {
-                        "noUnusedVariables": "off",
-                        "noUnusedImports": "off"
-                    }
-                }
-            }
-        }
-    ]
+      }
+    }
+  ]
 }
