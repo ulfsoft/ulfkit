@@ -24,6 +24,8 @@
         "clean": "rimraf dist",
         "lint": "biome check .",
         "prepare": "pnpm build",
+        "test": "pnpm vitest --run",
+        "format": "biome format . --write",
         "prepublishOnly": "pnpm run build && pnpm run typecheck"
     },
     "publishConfig": {
@@ -38,12 +40,17 @@
     },
     "homepage": "https://github.com/ulfsoft/ulfkit#readme",
     "keywords": [],
-    "author": "Ulfsoft Krzysztof Begiedza",
+    "author": {
+        "name": "Krzysztof Begiedza",
+        "email": "contact@kbegiedza.eu",
+        "url": "https://ulfsoft.com"
+    },
     "license": "Apache-2.0",
     "packageManager": "pnpm@10.13.1",
     "devDependencies": {
         "@biomejs/biome": "2.2.4",
         "rimraf": "^6.0.1",
-        "typescript": "^5.6.3"
+        "typescript": "^5.6.3",
+        "vitest": "^3.2.4"
     }
 }

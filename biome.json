@@ -9,6 +9,7 @@
         "ignoreUnknown": false
     },
     "formatter": {
+        "useEditorconfig": true,
         "bracketSameLine": true,
         "lineWidth": 120,
         "enabled": true,
@@ -20,10 +21,16 @@
     "linter": {
         "enabled": true,
         "rules": {
-            "recommended": true
+            "recommended": true,
+            "style": {
+                "useImportType": "warn"
+            }
         }
     },
     "javascript": {
+        "assist": {
+            "enabled": true
+        },
         "formatter": {
             "lineWidth": 120,
             "quoteStyle": "double",
