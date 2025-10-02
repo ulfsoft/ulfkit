@@ -1,6 +1,6 @@
 {
     "name": "@ulfsoft/ulfkit",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A toolkit for building resilient and scalable applications.",
     "private": false,
     "type": "module",
