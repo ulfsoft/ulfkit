@@ -26,7 +26,7 @@
     "lint": "biome check .",
     "test": "vitest --run",
     "format": "biome format . --write",
-    "ci": "pnpm run lint && pnpm run typecheck && pnpm run test"
+    "ci": "pnpm install && pnpm run lint && pnpm run typecheck && pnpm run test"
   },
   "publishConfig": {
     "access": "public"
