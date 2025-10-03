@@ -46,7 +46,7 @@
     "url": "https://ulfsoft.com"
   },
   "license": "Apache-2.0",
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.18.0",
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
     "rimraf": "^6.0.1",
