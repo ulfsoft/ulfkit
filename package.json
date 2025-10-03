@@ -24,10 +24,9 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "clean": "rimraf dist",
     "lint": "biome check .",
-    "prepare": "pnpm build",
-    "test": "pnpm vitest --run",
+    "test": "vitest --run",
     "format": "biome format . --write",
-    "prepublishOnly": "pnpm run build && pnpm run typecheck"
+    "ci": "pnpm run lint && pnpm run typecheck && pnpm run test"
   },
   "publishConfig": {
     "access": "public"
