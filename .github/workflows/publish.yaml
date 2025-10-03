@@ -22,10 +22,10 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Install dependencies in CI mode
-        run: pnpm ci
+        run: pnpm run ci
 
       - name: Build
-        run: pnpm build
+        run: pnpm run build
 
       - name: Configure npm auth
         env:
