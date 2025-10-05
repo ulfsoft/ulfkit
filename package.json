@@ -19,8 +19,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup src/index.ts --dts --format esm,cjs --out-dir dist",
-    "build:watch": "tsup src/index.ts --dts --format esm,cjs --out-dir dist --watch",
+    "build": "rimraf dist && tsup packages/index.ts --dts --format esm,cjs --out-dir dist",
+    "build:watch": "tsup packages/index.ts --dts --format esm,cjs --out-dir dist --watch",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "clean": "rimraf dist",
     "lint": "biome check .",

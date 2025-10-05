@@ -25,12 +25,12 @@
     "isolatedModules": true,
     "stripInternal": true,
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "packages",
     "types": [],
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src"
+    "packages"
   ],
   "exclude": [
     "dist",

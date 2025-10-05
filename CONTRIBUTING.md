@@ -30,9 +30,9 @@ pnpm test
 2. Describe the API shape (inputs, output, edge cases)
 3. Provide rationale (why it belongs in core)
 4. Submit PR with:
-   - `src/<utility>.ts`
-   - Tests in `src/__tests__` (or `tests/` if added later)
-   - Added to `src/index.ts` exports
+   - `packages/<utility>.ts`
+   - Tests in `packages/__tests__` (or `tests/` if added later)
+   - Added to `packages/index.ts` exports
    - Documentation snippet in `docs/api` if substantial
 
 ## Coding Guidelines

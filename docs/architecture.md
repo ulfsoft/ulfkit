@@ -8,14 +8,14 @@
 
 ## Directory Layout
 ```
-src/
+packages/
   combineClasses.ts  # class name utility
   math.ts            # math namespace helpers
   index.ts           # exports public API
 ```
 
 ## Export Strategy
-- Single entry point today (`src/index.ts`)
+- Single entry point today (`packages/index.ts`)
 - Use `exports` field in `package.json` for Node + bundlers
 - Future: potential subpath exports (`./math`, `./classes`)
 
